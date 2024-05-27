@@ -28,9 +28,9 @@ int main()
     }
 
     // 保存点云数据到 PCD 文件
-    pcl::io::savePCDFileASCII("output.pcd", *cloud);
+    pcl::io::savePCDFileASCII("output_ascii.pcd", *cloud);
 
-    std::cout << "Saved " << cloud->points.size() << " data points to output.pcd." << std::endl;
+    std::cout << "Saved " << cloud->points.size() << " data points to output_ascii.pcd in ASCII format." << std::endl;
 
     return 0;
 }
